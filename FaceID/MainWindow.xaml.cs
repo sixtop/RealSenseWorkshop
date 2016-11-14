@@ -88,11 +88,15 @@ namespace FaceID
             recognitionConfig = faceConfig.QueryRecognition();
             recognitionConfig.Enable();
 
-            // Create a recognition database
+            /* 
+             * This method of creating a database was deprecated on later SDK implementations!
+             *  */
+            // Create a recognition database            
             //PXCMFaceConfiguration.RecognitionConfiguration.RecognitionStorageDesc recognitionDesc = new PXCMFaceConfiguration.RecognitionConfiguration.RecognitionStorageDesc();
             //recognitionDesc.maxUsers = DatabaseUsers;
             //recognitionConfig.CreateStorage(DatabaseName, out recognitionDesc);
             //recognitionConfig.UseStorage(DatabaseName);
+
             LoadDatabaseFromFile();
             recognitionConfig.SetRegistrationMode(PXCMFaceConfiguration.RecognitionConfiguration.RecognitionRegistrationMode.REGISTRATION_MODE_CONTINUOUS);
 
