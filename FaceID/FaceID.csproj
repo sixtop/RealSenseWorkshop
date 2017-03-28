@@ -57,8 +57,9 @@
     <StartupObject>FaceID.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="libpxcclr.cs">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Intel\RSSDK\bin\win32\libpxcclr.cs.dll</HintPath>
+    <Reference Include="libpxcclr.cs, Version=11.0.27.1384, Culture=neutral, PublicKeyToken=ca106b2214526f83, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Intel\RSSDK\bin\win32\libpxcclr.cs.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
